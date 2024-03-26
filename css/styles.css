@@ -1,0 +1,155 @@
+body {
+  background-color: #2f8f33;
+  padding: 0;
+  overflow: hidden;
+}
+
+.road {
+  width: 101.2%;
+  background-color: #565555;
+  margin-top: 45px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 5px 0;
+}
+
+.right-line {
+  display: flex;
+  height: 144px;
+  border-top: 2px solid wheat;
+  border-bottom: 5px dashed wheat;
+}
+
+.right-line-two {
+  height: 144px;
+  border-bottom: 2px solid wheat;
+  border-top: 5px dashed wheat;
+}
+
+.left-line {
+  height: 144px;
+  border-top: 2px solid wheat;
+  border-bottom: 5px dashed wheat;
+}
+
+.left-line-two {
+  height: 144px;
+  border-bottom: 2px solid wheat;
+  border-top: 5px dashed wheat;
+}
+
+.white-car {
+  width: 200px;
+  height: 90px;
+  background-color: rgb(199, 200, 200);
+  margin: 1% -15%;
+  border-radius: 10%;
+  animation: drive 7s ease infinite 10s;
+}
+
+.roof {
+  width: 120px;
+  height: 80px;
+  background-color: rgb(177, 177, 177);
+  margin: 5px 80px 5px 20px;
+  border-radius: 10%;
+}
+
+@keyframes drive {
+  0% {
+    margin-left: -20%;
+  }
+
+  100% {
+    margin-left: 120%;
+    margin-top: 1.9%;
+  }
+}
+
+.pickup {
+  display: flex;
+  width: 240px;
+  height: 100px;
+  background-color: rgb(211, 84, 0);
+  margin: 1% -20%;
+  border-radius: 15%;
+  animation: drive-pickup 9s ease infinite 10s;
+}
+
+.pickups-truck {
+  width: 160px;
+  height: 90px;
+  background-color: rgb(160, 64, 1);
+  border-radius: 15%;
+  margin: 5px;
+}
+
+@keyframes drive-pickup {
+  0% {
+    margin-left: -40%;
+  }
+
+  50% {
+    margin-left: 60%;
+    margin-top: 4%;
+  }
+
+  100% {
+    margin-left: 120%;
+    margin-top: -1.5%;
+  }
+}
+
+.track {
+  width: 350px;
+  background-color: rgb(51, 66, 164);
+  border: 3px solid black;
+  margin: 0.4%;
+  padding: 1%;
+  animation: drive-track 15s ease-in-out infinite 1s;
+}
+
+.tracks-cabin {
+  background-color: #c8c8c8;
+  width: 80px;
+  height: 100px;
+  margin-left: -99px;
+}
+
+@keyframes drive-track {
+  0% {
+    margin-left: 180%;
+  }
+
+  100% {
+    margin-left: -65%;
+    margin-top: 3%;
+  }
+}
+
+.track-two {
+  width: 350px;
+  background-color: cadetblue;
+  border: 3px solid black;
+  margin: 0.7%;
+  padding: 1%;
+  animation: drive-track 8s ease-in-out infinite 1s;
+  z-index: 999;
+}
+
+.tracks-two-cabin {
+  background-color: #ff2121;
+  width: 80px;
+  height: 100px;
+  margin-left: -99px;
+}
+
+@keyframes drive-track {
+  0% {
+    margin-left: 120%;
+  }
+
+  100% {
+    margin-left: -45%;
+  }
+}
